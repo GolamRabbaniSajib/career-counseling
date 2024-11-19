@@ -1,26 +1,22 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
+import 'react-toastify/dist/ReactToastify.css';
 import AOS from "aos";
 import { useEffect } from "react";
-
-const HomeLayOut = () => {
+const AuthLayOut = () => {
     useEffect(()=>{
         AOS.init({duration:1200})
       })
     return (
         <div className="font-libre">
-            <nav>
+            <header>
                 <Navbar></Navbar>
-            </nav>
-            <main>
+            </header>
+            <main className="bg-cyan-50 py-6">
                 <Outlet></Outlet>
             </main>
-            <footer>
-                <Footer></Footer>
-            </footer>
         </div>
     );
 };
 
-export default HomeLayOut;
+export default AuthLayOut;
