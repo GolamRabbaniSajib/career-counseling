@@ -1,0 +1,123 @@
+[
+    {
+      "Image": "https://i.ibb.co.com/ZK3f2JQ/photo-1557804506-669a67965ba0.jpg",
+      "id": 1,
+      "ServiceName": "Career Counseling Sessions",
+      "Category": "Online",
+      "Description": "Personalized one-on-one career counseling to help you navigate your career path.",
+      "Pricing": "$50 per session",
+      "Duration": "05-12-24 5-6pm",
+      "Counselor": "John Doe",
+      "Rating": "4.8/5",
+      "LearnMore": "https://example.com/career-counseling"
+    },
+    {
+      "Image": "https://i.ibb.co.com/YQzjMVv/resume.jpg",
+      "id": 2,
+      "ServiceName": "Resume Review",
+      "Category": "Online",
+      "Description": "Comprehensive resume critique to enhance your chances of landing your dream job.",
+      "Pricing": "$30 per resume",
+      "Duration": "05-12-24 3-4pm",
+      "Counselor": "Jane Smith",
+      "Rating": "4.7/5",
+      "LearnMore": "https://example.com/resume-review"
+    },
+    {
+      "Image": "https://i.ibb.co.com/4V7XyyS/inter.jpg",
+      "id": 3,
+      "ServiceName": "Interview Preparation",
+      "Category": "Group",
+      "Description": "Interactive group sessions to build confidence and prepare for interviews.",
+      "Pricing": "$20 per participant",
+      "Duration": "06-12-24 4-6pm",
+      "Counselor": "Sarah Lee",
+      "Rating": "4.9/5",
+      "LearnMore": "https://example.com/interview-preparation"
+    },
+    {
+      "Image": "https://i.ibb.co.com/ZddnPT3/preparation.jpg",
+      "id": 4,
+      "ServiceName": "Career Mentorship Program",
+      "Category": "Offline",
+      "Description": "In-depth guidance to achieve long-term career goals.",
+      "Pricing": "$100 per month",
+      "Duration": "05-12-24 10-11am",
+      "Counselor": "Michael Brown",
+      "Rating": "5/5",
+      "LearnMore": "https://example.com/career-mentorship"
+    },
+    {
+      "Image": "https://i.ibb.co.com/4ZRg7v6/photo-1454165804606-c3d57bc86b40.jpg",
+      "ServiceName": "Soft Skills Training",
+      "id": 5,
+      "Category": "Online",
+      "Description": "Learn effective communication and teamwork skills.",
+      "Pricing": "$25 per session",
+      "Duration": "07-12-24 2-3pm",
+      "Counselor": "Emily Davis",
+      "Rating": "4.6/5",
+      "LearnMore": "https://example.com/soft-skills-training"
+    },
+    {
+      "Image": "https://i.ibb.co.com/89SBjcy/skill.jpg",
+      "id": 6,
+      "ServiceName": "Skill Development Workshop",
+      "Category": "Group",
+      "Description": "Enhance critical skills for career advancement.",
+      "Pricing": "$40 per workshop",
+      "Duration": "08-12-24 3-6pm",
+      "Counselor": "Chris Wilson",
+      "Rating": "4.8/5",
+      "LearnMore": "https://example.com/skill-development"
+    },
+    {
+      "Image": "https://i.ibb.co.com/nQqfv5V/coching.jpg",
+      "id": 7,
+      "ServiceName": "Public Speaking Coaching",
+      "Category": "Online",
+      "Description": "Develop confidence and skill in public speaking.",
+      "Pricing": "$35 per session",
+      "Duration": "09-12-24 6-7pm",
+      "Counselor": "Anna Roberts",
+      "Rating": "4.9/5",
+      "LearnMore": "https://example.com/public-speaking"
+    },
+    {
+      "Image": "https://i.ibb.co.com/G7M4c9n/profetional.jpg",
+      "id": 8,
+      "ServiceName": "Professional Networking Tips",
+      "Category": "Online",
+      "Description": "Strategies to expand and utilize your professional network.",
+      "Pricing": "$20 per session",
+      "Duration": "10-12-24 4-5pm",
+      "Counselor": "David Martinez",
+      "Rating": "4.5/5",
+      "LearnMore": "https://example.com/networking-tips"
+    },
+    {
+      "Image": "https://i.ibb.co.com/VDhyVYs/leader.jpg",
+      "id": 9,
+      "ServiceName": "Leadership Development",
+      "Category": "Offline",
+      "Description": "Training to become an effective leader in your industry.",
+      "Pricing": "$150 per course",
+      "Duration": "11-12-24 9-12pm",
+      "Counselor": "Laura Johnson",
+      "Rating": "5/5",
+      "LearnMore": "https://example.com/leadership-development"
+    },
+    {
+      "Image": "https://i.ibb.co.com/f8pd5MF/last.jpg",
+      "id": 10,
+      "ServiceName": "Conflict Management Skills",
+      "Category": "Online",
+      "Description": "Techniques to resolve conflicts effectively in professional settings.",
+      "Pricing": "$45 per session",
+      "Duration": "12-12-24 5-6pm",
+      "Counselor": "Mark Taylor",
+      "Rating": "4.7/5",
+      "LearnMore": "https://example.com/conflict-management"
+    }
+  ]
+  
