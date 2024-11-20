@@ -10,7 +10,7 @@ const Card = ({ card }) => {
     <div>
       <div className="card card-compact bg-base-100 border hover:bg-purple-200" data-aos="flip-left">
         <figure className="p-4">
-          <img className="rounded-xl "
+          <img className="rounded-xl h-52"
             src={Image}
             alt="Shoes"
           />
