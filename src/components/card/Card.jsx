@@ -15,7 +15,7 @@ const Card = ({ card }) => {
             alt="Shoes"
           />
         </figure>
-        <div className="card-body space-y-2">
+        <div className="card-body space-y-1">
           <h2 className="text-sm font-black">{ServiceName}</h2>
           <p className="text-xl font-bold">{Counselor}</p>
           <div className="grid grid-cols-2 space-x-4">
