@@ -34,6 +34,10 @@ const Profile = () => {
           <img src={user?.photoURL} alt="Shoes" className="rounded-xl w-96" />
         </figure>
         <div className="grid grid-cols-2 gap-4 px-4">
+            <p>Your Email:</p>
+            <p className="text-xl font-semibold">{user?.email}</p>
+        </div>
+        <div className="grid grid-cols-2 gap-4 px-4">
             <p>Name:</p>
             <p className="text-xl font-semibold">{user?.displayName}</p>
         </div>

@@ -10,11 +10,11 @@ const ErrorPage = () => {
         <p className="mt-2 text-gray-500">
           Sorry, the page you are looking for doesn't exist.
         </p>
-        <button
+        
+          <Link to="/"><button
           className="btn btn-neutral rounded-lg hover:bg-green-600 transition"
-        >
-          <Link to="/">Go back Home page</Link>
-        </button>
+        >Go back Home page</button></Link>
+        
       </div>
     </div>
     );
