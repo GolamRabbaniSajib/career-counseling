@@ -25,7 +25,7 @@ const ActiveSwiper = ({cards}) => {
       >
         {
             cards.map(card => (
-                <SwiperSlide key={card.id}><img src={card.Image} alt="" /></SwiperSlide>
+                <SwiperSlide key={card.id}><img src={card.Image} alt={card.ServiceName} /></SwiperSlide>
             ))
         }
       </Swiper>
