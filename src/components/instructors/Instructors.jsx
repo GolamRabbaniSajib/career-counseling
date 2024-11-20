@@ -3,9 +3,12 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Instructors = () => {
   return (
     <div className="w-11/12 mx-auto">
-      <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500" className="py-6 space-y-2">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="py-6 space-y-2"
+      >
         <p className="text-center text-xl text-green-300 font-medium">
           Our team
         </p>
@@ -19,10 +22,7 @@ const Instructors = () => {
      data-aos-easing="ease-in-sine">
           <div className="card card-compact border p-4 bg-[#FFF9EB]">
             <figure>
-              <img
-                src="https://i.ibb.co.com/x6gpLtF/1.jpg"
-                alt="Peter Webb"
-              />
+              <img src="https://i.ibb.co.com/x6gpLtF/1.jpg" alt="Peter Webb" />
             </figure>
             <div className="card-body bg-white rounded-3xl mt-4">
               <div className="flex justify-center items-center">
@@ -33,20 +33,19 @@ const Instructors = () => {
               <hr />
               <div className="flex items-center justify-center space-x-2">
                 <div className="p-2 rounded-full bg-green-200">
-                <FaFacebookF />
+                  <FaFacebookF />
                 </div>
                 <div className="p-2 rounded-full bg-green-200">
-                <FaTwitter />
+                  <FaTwitter />
                 </div>
                 <div className="p-2 rounded-full bg-green-200">
-                <FaInstagram />
+                  <FaInstagram />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="fade-up"
-     data-aos-duration="3000">
+        <div data-aos="fade-up" data-aos-duration="3000">
           <div className="card card-compact border p-4 bg-[#FFF9EB]">
             <figure>
               <img
@@ -63,19 +62,22 @@ const Instructors = () => {
               <hr />
               <div className="flex items-center justify-center space-x-2">
                 <div className="p-2 rounded-full bg-green-200">
-                <FaFacebookF />
+                  <FaFacebookF />
                 </div>
                 <div className="p-2 rounded-full bg-green-200">
-                <FaTwitter />
+                  <FaTwitter />
                 </div>
                 <div className="p-2 rounded-full bg-green-200">
-                <FaInstagram />
+                  <FaInstagram />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+        >
           <div className="card card-compact border p-4 bg-[#FFF9EB]">
             <figure>
               <img
@@ -92,13 +94,13 @@ const Instructors = () => {
               <hr />
               <div className="flex items-center justify-center space-x-2">
                 <div className="p-2 rounded-full bg-green-200">
-                <FaFacebookF />
+                  <FaFacebookF />
                 </div>
                 <div className="p-2 rounded-full bg-green-200">
-                <FaTwitter />
+                  <FaTwitter />
                 </div>
                 <div className="p-2 rounded-full bg-green-200">
-                <FaInstagram />
+                  <FaInstagram />
                 </div>
               </div>
             </div>

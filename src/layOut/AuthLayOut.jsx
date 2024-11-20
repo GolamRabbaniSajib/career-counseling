@@ -8,7 +8,7 @@ const AuthLayOut = () => {
         AOS.init({duration:1200})
       })
     return (
-        <div className="font-libre">
+        <div className="font-libre overflow-x-hidden">
             <header>
                 <Navbar></Navbar>
             </header>

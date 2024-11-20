@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
   const links = (
     <>
       <li>
@@ -57,14 +56,14 @@ const Navbar = () => {
                   <div className="w-10 rounded-full">
                     <img
                       className="rounded-full"
-                      alt="Tailwind CSS Navbar component"
-                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                      alt="sajib"
+                      src={user?.photoURL}
                     />
                   </div>
                 </div>
                 <div
                   tabIndex={0}
-                  className="dropdown-content menu rounded-box z-[1] w-52 p-4 shadow bg-orange-50"
+                  className="dropdown-content menu rounded-box z-[1] w-auto p-4 shadow bg-orange-50"
                 >
                   <p>{user.displayName}</p>
                 </div>

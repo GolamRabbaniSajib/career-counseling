@@ -5,11 +5,16 @@ import Details from "../components/details/Details";
 import LogIn from "../pages/LogIn";
 import AuthLayOut from "../layOut/AuthLayOut";
 import Register from "../pages/Register";
+import UserRouter from "./UserRouter";
+import Profile from "../components/Profile/Profile";
+import Forgot from "../components/forgot/Forgot";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <HomeLayOut></HomeLayOut>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -18,13 +23,17 @@ const router = createBrowserRouter([
             },
             {
                 path: "/details/:id",
-                element: <Details></Details>,
+                element: <UserRouter><Details></Details></UserRouter>,
                 loader: async ({params}) =>{
                     const res = await fetch("/Data.json")
                     const data = await res.json()
                     const singleData = data.find(d => d.id == params.id)
                     return singleData
                 }
+            },
+            {
+                path: "/profile",
+                element: <UserRouter><Profile></Profile></UserRouter>
             }
         ]
     },
@@ -39,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: "/auth/register",
                 element: <Register></Register>
+            },
+            {
+                path: "/auth/forgot",
+                element: <Forgot></Forgot>
             }
         ]
     }

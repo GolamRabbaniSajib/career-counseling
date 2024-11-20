@@ -45,9 +45,7 @@ const Details = () => {
         </div>
       </div>
       <hr />
-      <div className="mt-4" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+      <div className="mt-4" data-aos="flip-up">
       <CommentBox></CommentBox>
       </div>
     </div>
