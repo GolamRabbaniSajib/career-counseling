@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import CommentBox from "../../commentBox/CommentBox";
+import { Helmet } from "react-helmet-async";
 
 const Details = () => {
   const singleData = useLoaderData();
@@ -9,6 +10,9 @@ const Details = () => {
 //   })
   return (
     <div className="my-6 w-11/12 mx-auto">
+      <Helmet>
+        <title>Career | Details-{ServiceName}</title>
+      </Helmet>
       <div className="hero min-h-screen my-6">
         <div className="hero-content flex-col md:grid md:grid-cols-2 md:space-x-5">
           <div data-aos="fade-right">

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Forgot = () => {
   const { forgot } = useContext(AuthContext);
@@ -36,6 +37,9 @@ const Forgot = () => {
   };
   return (
     <div className="w-11/12 mx-auto py-4 flex justify-center items-center">
+      <Helmet>
+        <title>Career | Forgot</title>
+      </Helmet>
       <div className="w-96 border bg-slate-200 py-5">
         <p className="text-xl font-semibold text-center p-4 bg-pink-300">
           Enter your email address.

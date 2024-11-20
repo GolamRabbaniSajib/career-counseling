@@ -3,6 +3,7 @@ import Card from "../components/card/Card";
 import Coaching from "../components/coaching/Coaching";
 import ActiveSwiper from "../components/swiper/ActiveSwiper";
 import Instructors from "../components/instructors/Instructors";
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -10,6 +11,9 @@ const Home = () => {
     
   return (
     <div>
+      <Helmet>
+        <title>Career | Home</title>
+      </Helmet>
       
         <section className="bg-black">
             <Coaching></Coaching>

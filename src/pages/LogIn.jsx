@@ -5,6 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { FcGoogle } from "react-icons/fc";
 import { signInWithPopup } from "firebase/auth";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const LogIn = () => {
   const [show, setShow] = useState(false);
@@ -61,6 +62,9 @@ const LogIn = () => {
 }
   return (
     <div className="flex justify-center items-center min-h-screen">
+      <Helmet>
+        <title>Career | Login</title>
+      </Helmet>
       <div
         data-aos="zoom-in-down"
         className="card bg-base-100 w-full max-w-lg shrink-0 shadow-xl p-6 border"

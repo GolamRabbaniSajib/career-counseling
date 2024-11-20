@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Profile = () => {
   const { user, updateUserProfile, setUser } = useContext(AuthContext);
@@ -29,6 +30,9 @@ const Profile = () => {
   }
   return (
     <div className="w-11/12 mx-auto min-h-screen flex justify-center items-center py-6">
+      <Helmet>
+        <title>Career | Profile</title>
+      </Helmet>
       <div data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500" className="card bg-base-100 shadow-xl">

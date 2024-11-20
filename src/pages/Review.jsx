@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Review = () => {
   return (
     <div className="w-11/12 mx-auto min-h-screen my-4 py-4">
+        <Helmet>
+            <title>Career | Reviews</title>
+        </Helmet>
       <div data-aos="fade-up"
      data-aos-anchor-placement="center-center" className="py-4 space-y-2">
         <p className="text-xl font-bold text-green-300 text-center">our</p>
