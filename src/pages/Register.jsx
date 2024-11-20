@@ -148,7 +148,7 @@ const Register = () => {
               className="input input-bordered"
               required
             />
-            <button onClick={() => setShow(!show)} className="btn btn-sm absolute right-2 top-11">{show? <FaEye /> : <FaEyeSlash />}</button>
+            <span onClick={() => setShow(!show)} className="btn btn-sm absolute right-2 top-11">{show? <FaEye /> : <FaEyeSlash />}</span>
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-neutral rounded-none font-semibold">

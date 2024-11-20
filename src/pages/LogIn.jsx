@@ -92,7 +92,7 @@ const LogIn = () => {
               className="input input-bordered"
               required
             />
-            <button onClick={() => setShow(!show)} className="btn btn-sm absolute right-2 top-11">{show? <FaEye /> : <FaEyeSlash />}</button>
+            <span onClick={() => setShow(!show)} className="btn btn-sm absolute right-2 top-11">{show? <FaEye /> : <FaEyeSlash />}</span>
           </div>
           {error?.login && (
               <label className="label py-2 px-3 bg-red-400 text-black text-sm">
