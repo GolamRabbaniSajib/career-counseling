@@ -42,7 +42,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-2xl font-semibold">
-            Career
+            <img className="w-15 h-10 rounded-full" src="https://i.ibb.co.com/JqRHKcV/09-57-46-893-512.webp" alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

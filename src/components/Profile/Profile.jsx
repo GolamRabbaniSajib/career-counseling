@@ -33,13 +33,16 @@ const Profile = () => {
         <figure className="p-4">
           <img src={user?.photoURL} alt="Shoes" className="rounded-xl w-96" />
         </figure>
-        <div className="grid grid-cols-2 gap-4 px-4">
+        <div className="grid grid-cols-2 gap-2 px-8">
             <p>Your Email:</p>
             <p className="text-xl font-semibold">{user?.email}</p>
         </div>
-        <div className="grid grid-cols-2 gap-4 px-4">
+        <div className="grid grid-cols-2 gap-2 px-8 my-5">
             <p>Name:</p>
             <p className="text-xl font-semibold">{user?.displayName}</p>
+        </div>
+        <div className="flex justify-center items-center my-4">
+          <p className="text-3xl text-center px-2 py-4 bg-red-200 rounded-lg">Change Your Information</p>
         </div>
         <div className="card-body">
           <form onSubmit={handleSubmit}>
