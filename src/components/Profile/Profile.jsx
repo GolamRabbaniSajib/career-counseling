@@ -43,9 +43,9 @@ const Profile = () => {
           <img src={user?.photoURL} alt="Shoes" className="rounded-xl w-96" />
         </figure>
         <div data-aos="fade-up"
-     data-aos-duration="3000" className="grid grid-cols-2 gap-2 px-8">
+     data-aos-duration="3000" className="*:text-center space-y-2">
             <p>Your Email:</p>
-            <p className="text-xl font-semibold">{user?.email}</p>
+            <p className="text-xl font-semibold w-auto">{user?.email}</p>
         </div>
         <div data-aos="fade-up"
      data-aos-duration="3000" className="grid grid-cols-2 gap-2 px-8 my-5">

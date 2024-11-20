@@ -15,9 +15,7 @@ const Home = () => {
         <title>Career | Home</title>
       </Helmet>
       
-        <section className="bg-black">
-            <Coaching></Coaching>
-        </section>
+        
       <section className="w-11/12 mx-auto py-6">
         <div className="my-5">
           <h1 className="text-4xl font-semibold text-center py-6">Our Services Image</h1>
@@ -35,6 +33,9 @@ const Home = () => {
             }
         </div>
       </section>
+      <section className="bg-black">
+            <Coaching></Coaching>
+        </section>
       <section className="my-10">
         <Instructors></Instructors>
       </section>

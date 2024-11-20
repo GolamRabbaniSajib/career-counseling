@@ -64,7 +64,7 @@ const Navbar = () => {
                     <img
                       className="rounded-full"
                       alt="sajib"
-                      src={user?.photoURL}
+                      src={`${user?.photoURL}`}
                     />
                   </div>
                 </div>
