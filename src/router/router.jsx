@@ -9,6 +9,7 @@ import UserRouter from "./UserRouter";
 import Profile from "../components/Profile/Profile";
 import Forgot from "../components/forgot/Forgot";
 import ErrorPage from "../pages/ErrorPage";
+import Review from "../pages/Review";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <Home></Home>,
                 loader: ()=> fetch("/Data.json")
+            },
+            {
+                path: "/review",
+                element: <UserRouter><Review></Review></UserRouter>
             },
             {
                 path: "/details/:id",

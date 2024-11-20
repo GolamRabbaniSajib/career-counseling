@@ -1,15 +1,22 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { FaHome, FaHouseUser } from "react-icons/fa";
+import { MdReviews } from "react-icons/md";
+import { TbLogin2 } from "react-icons/tb";
+import { HiOutlineLogin } from "react-icons/hi";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/"><FaHome /> Home</NavLink>
       </li>
       <li>
-        <NavLink to="/profile">My Profile</NavLink>
+        <NavLink to="/profile"><FaHouseUser /> My Profile</NavLink>
+      </li>
+      <li>
+        <NavLink to="/review"><MdReviews /> Reviews</NavLink>
       </li>
     </>
   );
@@ -78,14 +85,14 @@ const Navbar = () => {
                 onClick={logOut}
                 className="btn btn-neutral rounded-none font-semibold"
               >
-                LogOut
+                <HiOutlineLogin /> LogOut
               </button>
             ) : (
               <Link
                 to="/auth/login"
                 className="btn btn-neutral rounded-none font-semibold"
               >
-                Login
+                <TbLogin2 /> Login
               </Link>
             )}
           </div>
