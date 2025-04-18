@@ -1,33 +1,42 @@
-// import Swiper core and required modules
+// ActiveSwiper.jsx
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const ActiveSwiper = ({cards}) => {
+const ActiveSwiper = ({ cards }) => {
   return (
-    <div>
+    <div className="w-full">
       <Swiper
-        // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={3}
+        spaceBetween={24}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        className="py-6"
       >
-        {
-            cards.map(card => (
-                <SwiperSlide key={card.id}><img src={card.Image} alt={card.ServiceName} /></SwiperSlide>
-            ))
-        }
+        {cards.map((card) => (
+          <SwiperSlide key={card.id}>
+            <div className="p-4 rounded-xl shadow-md bg-white dark:bg-gray-800 transition hover:scale-[1.02] duration-300">
+              <img
+                src={card.Image}
+                alt={card.ServiceName}
+                className="w-full h-52 object-cover rounded-md mb-4"
+              />
+              <h3 className="text-xl font-semibold text-center text-gray-800 dark:text-white">
+                {card.ServiceName}
+              </h3>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
