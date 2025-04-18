@@ -25,25 +25,26 @@ const Home = () => {
         </div>
         <ActiveSwiper cards={cards} />
       </section>
-      <section data-aos="fade-up" className="w-11/12 mx-auto my-8">
-        <div className="*:text-center space-y-3 my-6">
-          <h1 className="text-4xl font-semibold">Our Best Services</h1>
-          <p>
-            Are you ready to take the next step in your professional journey?
-            Our tailored career counseling services provide you with the
-            guidance and insights you need to achieve your goals. Whether you’re
-            navigating a career change, seeking advancement, or exploring new
-            opportunities, our experienced counselors will help you identify
-            your strengths, refine your resume, and enhance your interview
-            skills.
+      <section data-aos="fade-up" className="w-11/12 max-w-7xl mx-auto my-12">
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+            Our Best Services
+          </h1>
+          <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg">
+            Ready to take the next step in your professional journey? Our
+            tailored career counseling services guide you through every stage —
+            from resume refinement to interview prep and growth strategies.
+            Let's reach your potential.
           </p>
         </div>
-        <div className="my-6 grid gap-4 lg:grid-cols-3 md:grid-cols-2">
+
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
-            <Card key={card.id} card={card}></Card>
+            <Card key={card.id} card={card} />
           ))}
         </div>
       </section>
+
       <section className="bg-black">
         <Coaching></Coaching>
       </section>
