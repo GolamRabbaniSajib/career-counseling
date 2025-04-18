@@ -5,8 +5,7 @@ const CommentBox = () => {
   const [comments, setComments] = useState([]);
 
   const handleInputChange = (e) => {
-    const co = e.target.value;
-    setComment(co);
+    setComment(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -18,18 +17,18 @@ const CommentBox = () => {
   };
 
   return (
-    <div className="mx-auto p-4 bg-white rounded-lg border">
+    <div className="mx-auto p-6 bg-white rounded-lg border shadow-lg max-w-4xl w-full">
       <div className="mt-4">
-        <h3 className="text-lg font-semibold mb-2">All Comments Are Here</h3>
-        <div className="my-6 py-3">
+        <h3 className="text-xl font-semibold mb-4">All Comments</h3>
+        <div className="my-4">
           {comments.length === 0 ? (
-            <p className="text-gray-500">please submit a comment...</p>
+            <p className="text-gray-400 text-center">No comments yet. Be the first to comment!</p>
           ) : (
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {comments.map((comment, index) => (
                 <li
                   key={index}
-                  className="p-2 border border-gray-300 rounded-lg bg-green-200"
+                  className="p-4 border border-gray-300 rounded-lg bg-green-100 shadow-sm hover:bg-green-200 transition duration-300"
                 >
                   {comment}
                 </li>
@@ -38,18 +37,18 @@ const CommentBox = () => {
           )}
         </div>
       </div>
-      <h2 className="text-xl font-bold mb-4">Type a Comment</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className="text-xl font-semibold mb-4">Leave a Comment</h2>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <textarea
           value={comment}
           onChange={handleInputChange}
-          placeholder="your comment..."
-          className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2"
+          placeholder="Type your comment here..."
+          className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-none"
           rows="4"
-        ></textarea>
+        />
         <button
           type="submit"
-          className="btn btn-neutral"
+          className="btn btn-primary px-6 py-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 focus:outline-none"
         >
           Submit
         </button>
