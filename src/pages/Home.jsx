@@ -14,42 +14,55 @@ const Home = () => {
         <title>Career | Home</title>
       </Helmet>
 
-      <section className="w-11/12 max-w-7xl mx-auto py-10">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 ">
+      {/* Hero / Swiper Section */}
+      <section className="w-11/12 max-w-7xl mx-auto py-16">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Our Services
           </h1>
-          <p className="mt-2 text-gray-600 ">
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             Discover what we offer to support your career journey.
           </p>
         </div>
         <ActiveSwiper cards={cards} />
       </section>
-      <section data-aos="fade-up" className="w-11/12 max-w-7xl mx-auto my-12">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+
+      {/* Services Grid */}
+      <section
+        data-aos="fade-up"
+        className="w-11/12 max-w-7xl mx-auto py-16"
+      >
+        <div className="text-center space-y-5">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800">
             Our Best Services
-          </h1>
-          <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg">
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
             Ready to take the next step in your professional journey? Our
-            tailored career counseling services guide you through every stage —
-            from resume refinement to interview prep and growth strategies.
-            Let's reach your potential.
+            tailored career counseling services guide you through every stage — from
+            resume refinement to interview prep and growth strategies. Let's reach
+            your potential.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
             <Card key={card.id} card={card} />
           ))}
         </div>
       </section>
 
-      <section className="bg-black">
-        <Coaching></Coaching>
+      {/* Coaching Section */}
+      <section className="bg-gray-950 text-white py-16">
+        <div className="w-11/12 max-w-7xl mx-auto">
+          <Coaching />
+        </div>
       </section>
-      <section className="my-10">
-        <Instructors></Instructors>
+
+      {/* Instructors Section */}
+      <section className="py-16 bg-white">
+        <div className="w-11/12 max-w-7xl mx-auto">
+          <Instructors />
+        </div>
       </section>
     </div>
   );
